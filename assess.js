@@ -94,10 +94,12 @@ arrayOfnum(numArray)
 //Write a function that takes in an array of strings and returns an array with every element
 //turned into a number
 function toString(nums){
-return nums.join();
+    const result=[]
+nums.forEach(num=>{
+result.push(parseInt(num))
+});
+return result;
 }
 let nums=["5","10","4","6","55"];
-console.log(toString(nums));
+console.log(toString(["5","10","4","6","55"]));
 
-let r=nums.join()
-console.log([r])
